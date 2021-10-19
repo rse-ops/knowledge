@@ -1,19 +1,42 @@
 - title: Documentation
   url: docs
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: Containers
+      url: "docs/containers"
       children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
+        - title: Docker
+          url: docs/containers/docker
+        - title: Singularity
+          url: docs/containers/singularity
+#    - title: Version Control
+#      url: "docs/version-control"
+#    - title: Programming Languages
+#      url: "docs/programming-languages"
+#    - title: Compilers
+#      url: "docs/compilers"
+#    - title: Linux Operating Systems
+#      url: "docs/linux-os"
+#    - title: Databases
+#      url: "docs/databases"
+#    - title: Open Source
+#      url: "docs/open-source"
+#    - title: Building, Packaging, Application Development
+#      url: "docs/building"
+#    - title: Monitoring
+#      url: "docs/monitoring"
+#    - title: Web Interfaces
+#      url: "docs/web-interfaces"
+#    - title: Continous Integration and Delivery
+#      url: "docs/ci-cd"
+    - title: "Getting Started"
+      children:
+        - title: Developer Guide
+          url: "docs/developer"
+        - title: About
+          url: "about"
+        - title: "News"
+          url: "news"
+
 - title: "Extras"
   url: "docs/extras"
   links:

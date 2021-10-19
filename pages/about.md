@@ -5,11 +5,14 @@ permalink: /about/
 
 # About
 
-This is a [starter template](https://vsoch.github.io/docsy-jekyll/) for a Docsy jekyll theme, based
-on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
-native deployment on GitHub pages. See the [respository]({{ site.repo }}) for more details.
+The Research Software Engineering Ops (RSE-ops) knowledge base is intended to provide resources and documentation
+for good practices and tools in the Research Software Engineering community. If you haven't heard of RSE-ops, we invite
+you to read more at the [landscape](https://rse-ops.github.io/landscape/). All whom are interested are invited
+to participate in this community, and we invite you to ask questions or open an issue.
+The knowledge base itself is intended for native deployment on GitHub pages to ensure that contribution is easy - the
+same way you'd contribute to code you can contribute to the resources here. See the [respository](https://github.com/{{ site.github_user }}/{{ site.github_repo }}) for more details.
 
 ## Support
 
-If you need help, please don't hesitate to [open an issue](https://www.github.com/{{ site.github_user }}/{{ site.github_repo }}).
+If you need help, please don't hesitate to [open an issue](https://github.com/{{ site.github_user }}/{{ site.github_repo }}).
 

@@ -14,28 +14,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Docsy Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: RSE-OPS Knowledge
+email: sochat1@llnl.gov
+author: "RSEng"
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The RSEOps Knowledge base is a collection of articles, tutorials, examples,
+  and quizzes for common concepts in Research Software Engineering Ops.
 
 # Add your baseurl here (your repository) but DO NOT CHANGE THE LINE NUMBER without editing .circleci/circle_urls.sh
-baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/knowledge" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://rse-ops.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/docsy-jekyll"
-github_user: "vsoch"
-github_repo: "docsy-jekyll"
-github_branch: "master"
+repo: "https://github.com/rse-ops/knowledge"
+github_user: "rse-ops"
+github_repo: "knowledge"
+github_branch: "main"
 
 # Optional
-twitter: vsoch
+twitter: rseops
 linkedin: vsochat
 dockerhub: vanessa
 
@@ -50,8 +49,9 @@ feedback: true
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
-color: "#30638e"
-# color: "#8c1515" # primary color for header, buttons
+color: "#005dab"
+logo_text_color: "#005dab"
+logo_highlight_color: "#741755"
 
 # Build settings
 markdown: kramdown

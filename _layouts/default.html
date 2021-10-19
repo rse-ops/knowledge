@@ -8,7 +8,8 @@
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <i id="show-sidebar" style="cursor:pointer;" class="fas fa-bars"></i>
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none" id="sidebar">
           {% include sidebar.html %}
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
@@ -21,7 +22,7 @@
               </ul></li>
               </ul></nav>
           </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main" id="main-content">
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	      <ol class="breadcrumb spb-1">
               {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
@@ -37,15 +38,26 @@
            </nav>
            <div class="td-content">
 	      {{ content }}	
-              {% if section.links %}<div class="section-index">
-               <hr class="panel-line">{% for child in section.links %}
+              <div class="section-index">
+               <hr class="panel-line">{% if section.links %}{% for child in section.links %}
                  <div class="entry">
                     <h5>
                         <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
                     </h5>
                     <p>{{ child.description }}</p>
-                 </div>{% endfor %}
-              </div>{% endif %}
+                 </div>{% endfor %}{% endif %}
+                 
+                 <h3>Read Next</h3>
+                 {% assign page_url = page.url | replace: "index", "" %}
+                  {% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %} {% if doc_url contains page_url %}
+                  <div class="entry" style="width:30%; float:left">
+                    <h5>
+                        <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                    </h5>
+                    <p>{{ doc.description }}</p>
+                 </div>
+                  {% endif %}{% endunless %}{% endfor %}
+              </div><br>
               {% include feedback.html %}
            </div>
           </main>
