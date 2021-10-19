@@ -96,3 +96,6 @@ to see the server running.
 - completed pages for knowledge base
 - top level "subpages"
 - a ?highlight=word to highlight text on the page (akin to readthedocs)
+- knowledge pages should have means to provide listing of tutorials / examples
+- code blocks should be copy-pasteable
+- some code blocks could be runnable!
