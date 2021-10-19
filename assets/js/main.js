@@ -26,20 +26,21 @@ layout: null
 
         // Expand sidebar
         $(".sidebar-link").click(function(event){
-            event.preventDefault()
-            var data_id = $(this).attr("data-id");
-            if ($("." + data_id).hasClass("show")) {
-              $("." + data_id).removeClass("show");
-              $("." + data_id + "-chevron").removeClass("fa-chevron-down");
-              $("." + data_id + "-chevron").addClass("fa-chevron-right");                        
-            } else {
-              $("." + data_id).addClass("show");
-              $("." + data_id + "-chevron").removeClass("fa-chevron-right");
-              $("." + data_id + "-chevron").addClass("fa-chevron-down");            
+            console.log($(this))
+            if (!$(this).hasClass("show")) {
+              event.preventDefault();
+              var data_id = $(this).attr("data-id");
+              if ($("." + data_id).hasClass("show")) {
+                $("." + data_id).removeClass("show");
+                $("." + data_id + "-chevron").removeClass("fa-chevron-down");
+                $("." + data_id + "-chevron").addClass("fa-chevron-right");                        
+              } else {
+                $("." + data_id).addClass("show");
+                $("." + data_id + "-chevron").removeClass("fa-chevron-right");
+                $("." + data_id + "-chevron").addClass("fa-chevron-down");            
+              }
             }
-            if ($(this).hasClass("sidebar-link-child")) {
-                document.location = $(this).attr("href")
-            }
+
         });
     });
 
