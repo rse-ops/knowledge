@@ -81,7 +81,7 @@ but should be removed for production.
 Once your docker-compose to download the base container and bring up the server:
 
 ```bash
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 You can then open your browser to [http://localhost:4000](http://localhost:4000)
@@ -99,3 +99,4 @@ to see the server running.
 - knowledge pages should have means to provide listing of tutorials / examples
 - code blocks should be copy-pasteable
 - some code blocks could be runnable!
+- site should render into pdf

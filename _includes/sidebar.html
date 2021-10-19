@@ -21,16 +21,16 @@
         </li>
         {% if section.links %}
           <ul>
-            <li class="sidebar-link collapse show" id="{{ section.title | slugify }}">
+            <li class="{% if entry.children %}{% else %}sidebar-link{% endif %} collapse show" id="{{ section.title | slugify }}">
               <ul class="td-sidebar-nav__section pr-md-1">
                 {% for entry in section.links %}{% assign sidebar_id = forloop.index %}
-                  <li class="td-sidebar-nav__section-title sidebar-link">
-                    <a data-id="sidebar-link-{{ sidebar_id }}" href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}" 
-                       class="sidebar-link align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">{{ entry.title }}{% if entry.children %}<i style="float:right; cursor:pointer; margin-top:5px" class="fas fa-chevron-right sidebar-link-{{ sidebar_id }}-chevron"></i>{% endif %}
+                  <li class="td-sidebar-nav__section-title {% if entry.children %}sidebar-link{% endif %}">
+                    <a data-id="sidebar-link-{{ section.title | slug }}-{{ sidebar_id }}" href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}" 
+                       class="{% if entry.children %}sidebar-link{% endif %} align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">{{ entry.title }}{% if entry.children %}<i style="float:right; cursor:pointer; margin-top:5px" class="fas fa-chevron-right sidebar-link-{{ section.title | slug }}-{{ sidebar_id }}-chevron"></i>{% endif %}
                     </a>
                   </li>
                     <ul>
-                      <li class="sidebar-link-{{ sidebar_id }} collapse {% if page.url contains entry.url or pageUrl == sectionUrl %}show{% endif %}" id="{{ child.title | slugify }}">
+                      <li class="sidebar-link-{{ section.title | slug }}-{{ sidebar_id }} collapse {% if page.url contains entry.url or pageUrl == sectionUrl %}show{% endif %}" id="{{ child.title | slugify }}">
                         {% if entry.children %}
                           {% for child in entry.children %}
                             <a class="sidebar-link-child td-sidebar-link td-sidebar-link__page " id="m-{{ section.title | slugify }}-{{ entry.title | slugify }}-{{ child.title | slugify }}" href="{% if child.url %}{{ site.baseurl }}/{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>{% endfor %}
