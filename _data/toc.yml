@@ -8,6 +8,8 @@
           url: docs/containers/docker
         - title: Singularity
           url: docs/containers/singularity
+    - title: Schedulers
+      url: "docs/schedulers"
 #    - title: Version Control
 #      url: "docs/version-control"
 #    - title: Programming Languages
