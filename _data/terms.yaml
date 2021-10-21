@@ -22,7 +22,5 @@
   definition: Resource and Job Management Software
 - name: SDN
   definition: Software Defined Networking
-- name: ViDA
-  definition: Virtual Design Assistant
 - name: HPC
   definition: High Performance Computing
