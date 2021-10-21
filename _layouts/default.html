@@ -55,9 +55,12 @@
 		  <!-- We compare lengths - the next level should be current +1.-->
 		  {% assign current_level = page_url | split: "/" | size %}
 		  {% assign next_level = current_level | plus: 1 %}
+		  {% assign previous_level = current_level | minus: 2 %}
+		  {% assign previous_page = page_url | split: "/" | slice: 1, previous_level | join: "/" %}
 
               <div class="section-index">
-               <hr class="panel-line"><div class="card-columns">{% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %}
+               <hr class="panel-line"><div class="card-columns">
+               {% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %}
                   {% assign comparison_count = doc_url | split: "/" | size %}
                   {% if next_level == comparison_count %}{% if doc_url contains page_url %}
                   <div class="card next-card">
@@ -66,7 +69,14 @@
                     </h5>
                     <p>{{ doc.description }}</p>
                  </div>
-                  {% endif %}{% endif %}{% endunless %}{% endfor %}<br>
+                  {% endif %}{% endif %}{% endunless %}{% endfor %}
+                  <div class="card next-card">
+                    <h5>
+                        <a href="{{ site.baseurl }}/{{ previous_page }}">Go back</a>
+                    </h5>
+                    <p>Return to {{ previous_page }}</p>
+                 </div>
+                  <br>
               </div>
               </div>
                  <div style="padding-top:30px">{% include feedback.html %}</div>
