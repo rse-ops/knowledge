@@ -29,7 +29,7 @@ Search the glossary of terms! To add a term, add it to <a href="https://github.c
   </div>
 </div>
 
-<div class="card-columns" id="terms">
+<div class="card-columns" id="terms-box">
   {% for term in site.data.terms %}<div class="card">
       <div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
       <div class="card-title">
@@ -55,7 +55,7 @@ function searchTerms() {
   var input, filter, cards, cardContainer, title, i;
   input = document.getElementById("myFilter");
   filter = input.value.toUpperCase();
-  cardContainer = document.getElementById("terms");
+  cardContainer = document.getElementById("terms-box");
   cards = cardContainer.getElementsByClassName("card");
   for (i = 0; i < cards.length; i++) {
     title = cards[i].querySelector(".card-title");
