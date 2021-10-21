@@ -59,14 +59,14 @@
               <div class="section-index">
                <hr class="panel-line"><div class="card-columns">{% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %}
                   {% assign comparison_count = doc_url | split: "/" | size %}
-                  {% if next_level == comparison_count %}
+                  {% if next_level == comparison_count %}{% if doc_url contains page_url %}
                   <div class="card next-card">
                     <h5>
                         <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                     </h5>
                     <p>{{ doc.description }}</p>
                  </div>
-                  {% endif %}{% endunless %}{% endfor %}<br>
+                  {% endif %}{% endif %}{% endunless %}{% endfor %}<br>
               </div>
               </div>
                  <div style="padding-top:30px">{% include feedback.html %}</div>
