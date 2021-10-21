@@ -10,6 +10,8 @@
           url: docs/containers/singularity
     - title: Schedulers
       url: "docs/schedulers"
+    - title: Building and Packaging
+      url: docs/packaging
 #    - title: Version Control
 #      url: "docs/version-control"
 #    - title: Programming Languages
