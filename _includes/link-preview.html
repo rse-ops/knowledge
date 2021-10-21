@@ -1,0 +1,36 @@
+{% if page.tutorials %}
+<style>
+.link-preview {
+  margin: auto;
+  display: block;
+  font-weight: normal;
+  text-decoration: none;
+  max-width: 400px !important;
+  max-height: 100px !important;
+}
+
+.microlink_card__content_title {
+  padding-top: 120px;
+}
+
+.microlink_card {
+  max-height: 100px !important;
+}
+.microlink_card__media_video_wrapper {
+  max-height: 100px !important;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/microlinkjs@latest/umd/microlink.min.js"></script>
+{% for category in page.tutorials %}
+<h3>{{ category.name }} Tutorials</h3>
+<div class="card-columns">
+{% for tut in category.links %}
+<a target="_blank" style="margin-top:10px" href="{{ tut.url }}"  class="link-preview card">{{ tut.title }}</a>
+{% endfor %}
+</div>
+{% endfor %}{% endif %}
+
+<script>
+microlink('.link-preview', { size: 'small' });
+</script>
