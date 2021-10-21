@@ -19,6 +19,8 @@ cd knowledge
 
 ### 2. Customize
 
+#### Documentation or Pages
+
 You will most likely want to add docs or knowledge articles, in which case you can write them to [_docs](https://github.com/rse-ops/knowledge/blob/main/_docs) under the appropriate category of organization and they will show up.
 
 To add top level pages (e.g. "About") write them into the [pages](https://github.com/rse-ops/knowledge/blob/main/pages) folder. 
@@ -26,6 +28,19 @@ For pages you must define urls based on the `permalink` attribute at the top of 
 
 To edit the main navigation on the left, update [_data/toc.myl](https://github.com/rse-ops/knowledge/blob/main/_data/toc.yml).
 The top navigation is controlled by [_data/navigation.yml](https://github.com/rse-ops/knowledge/blob/main/_data/navigation.yml)
+
+#### Terms
+
+To add a new term to the terms pages, add it to the [_data/terms.yaml](_data/terms.yaml)
+file. It should be self explanatory - whether you have a term or acronym, it will have a name
+and definition. If you are working on a specific documentation page under `_docs`, you can also add
+a list of terms there, as follows:
+
+```yaml
+terms:
+ - name: Avocado
+   definition: The most delicious of things.
+```
 
 ### 3. Options
 

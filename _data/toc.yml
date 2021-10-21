@@ -40,6 +40,8 @@
 - title: "Extras"
   url: "docs/extras"
   links:
+    - title: Terms
+      url: "docs/terms/"
     - title: Quizzes
       url: "docs/extras/example-quiz"
     - title: Tags Page

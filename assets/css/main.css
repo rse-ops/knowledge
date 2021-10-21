@@ -5411,6 +5411,11 @@ input[type=button].btn-block {
     color: {{ site.logo_highlight_color }};
 }
 
+.next-card {
+   border: none !important;
+   padding: 20px;
+}
+
 .card,
 .td-content .highlight {
     position: relative;

@@ -1,0 +1,28 @@
+- name: AWS
+  definition: Amazon Web Services
+- name: CI
+  definition: Continous Integration
+- name: FaaS
+  definition: Functions as a Service. Generally when you see something ending in aaS, it means "as a service."
+- name: HPC
+  definition: High Performance Computing
+- name: k8s
+  definition: Kubernetes
+- name: ML
+  definition: Machine Learning
+- name: OCI
+  definition: The Open Container Initiative
+- name: On-prem
+  definition: On premise servers, software, or other technology at your institution.
+- name: PDS
+  definition: Persistent Data Services
+- name: PFS
+  definition: Parallel File System
+- name: RJMS
+  definition: Resource and Job Management Software
+- name: SDN
+  definition: Software Defined Networking
+- name: ViDA
+  definition: Virtual Design Assistant
+- name: HPC
+  definition: High Performance Computing

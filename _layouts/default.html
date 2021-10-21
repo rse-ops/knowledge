@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <!-- Copyright 2019-2021 Vanessa Sochat-->
-  {% include head.html %}
+  {% include head.html %}  
   {% include google-analytics.html %}
   <body class="td-section">
     {% include header.html %}
@@ -38,28 +38,38 @@
            </nav>
            <div class="td-content">
 	      {{ content }}	
+              
               <div class="section-index">
-               <hr class="panel-line">{% if section.links %}{% for child in section.links %}
-                 <div class="entry">
+               <hr class="panel-line"><div class="card-columns">{% if section.links %}{% for child in section.links %}              
+                 <div class="next-card card">
                     <h5>
                         <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
                     </h5>
                     <p>{{ child.description }}</p>
                  </div>{% endfor %}{% endif %}
-                 
+              </div>
+
                  <h3>Read Next</h3>
-                 {% assign page_url = page.url | replace: "index", "" %}
-                  {% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %} {% if doc_url contains page_url %}
-                  <div class="entry" style="width:30%; float:left">
+                 {% assign page_url = page.url | replace: "index", "" | split: "/" | join: "/" %}
+
+		  <!-- We compare lengths - the next level should be current +1.-->
+		  {% assign current_level = page_url | split: "/" | size %}
+		  {% assign next_level = current_level | plus: 1 %}
+
+              <div class="section-index">
+               <hr class="panel-line"><div class="card-columns">{% for doc in site.docs %}{% assign doc_url = doc.url | replace: "index", "" %}{% unless doc.url == page.url %}
+                  {% assign comparison_count = doc_url | split: "/" | size %}
+                  {% if next_level == comparison_count %}
+                  <div class="card next-card">
                     <h5>
                         <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                     </h5>
                     <p>{{ doc.description }}</p>
                  </div>
-                  {% endif %}{% endunless %}{% endfor %}
-              </div><br>
-              {% include feedback.html %}
-           </div>
+                  {% endif %}{% endunless %}{% endfor %}<br>
+              </div>
+              </div>
+                 <div style="padding-top:30px">{% include feedback.html %}</div>
           </main>
         </div>
       </div>
