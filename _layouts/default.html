@@ -68,12 +68,9 @@
                         <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
                     </h5>
                     <p>{{ doc.description }}</p>
-                 </div>
-                  {% endif %}{% endif %}{% endunless %}{% endfor %}
+                 </div>{% endif %}{% endif %}{% endunless %}{% endfor %}
                   <div class="card next-card">
-                    <h5>
-                        <a href="{{ site.baseurl }}/{{ previous_page }}">Go back</a>
-                    </h5>
+                    <h5><a href="{{ site.baseurl }}/{{ previous_page }}">Go back</a></h5>
                     <p>Return to {{ previous_page }}</p>
                  </div>
                   <br>
