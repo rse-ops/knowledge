@@ -10,8 +10,16 @@
           url: docs/containers/singularity
     - title: Schedulers
       url: "docs/schedulers"
+      children:
+        - title: SLURM
+          url: docs/schedulers/slurm
     - title: Building and Packaging
       url: docs/packaging
+      children:
+        - title: Python
+          url: docs/packaging/python
+    - title: Interfaces
+      url: docs/interfaces
 #    - title: Version Control
 #      url: "docs/version-control"
 #    - title: Programming Languages
