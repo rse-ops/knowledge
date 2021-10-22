@@ -210,6 +210,49 @@ If you build locally and need to transfer to a cluster, you can use scp:
 $ scp container.sif <username>@login.<cluster>:/scratch/users/<username>/container.sif
 ```
 
+## Associated Tools
+
+A landscape of [Associated tools](https://singularityhub.github.io/) is still maintained by @vsoch and other Singularity community members, including (but not limited to):
+
+ - [Singularity HPC](https://singularity-hpc.readthedocs.io/en/latest/): allows installing Singularity (and other container technologies like Podman) as modules.
+ - [Singularity Compose](https://singularityhub.github.io/singularity-compose/): orchestration for Singularity containers
+ - [Singularity Python](https://singularityhub.github.io/singularity-cli/): Python client for Singularity
+ - [Singularity Catalog](https://singularityhub.github.io/singularity-catalog/): is a nice place to browse recipes.
+ - [docker2singularity](https://github.com/singularityhub/docker2singularity): an early tool to convert from Docker2Singularity on a host.
+ 
+
+## Registry Options
+
+### GitHub Packages
+
+So you have a Singularity container, where should you put it? Since a Singularity image is considered an [ORAS artifact](https://oras.land/) you can push it natively to GitHub packages, and since this can be associated with your code and CI and there are no limits, this is the recommended approach.
+You can follow [this template](https://github.com/singularityhub/github-ci) to have automated builds and deploys for your containers.
+
+### A Docker Registry
+
+To kill two birds with one stone, you can actually build a Docker image, push to a docker registry, and then pull down to Singularity. As an example:
+
+```bash
+$ singularity pull docker://vanessa/salad
+```
+
+This is another recommended approach as you can choose a Docker registry without rate or storage limits.  See [Docker Registry options]({{ site.baseurl }}/docs/containers/docker/distribution#registry-options) for this use case.
+
+### Sylabs Cloud
+
+The company Sylabs provides a [cloud](https://cloud.sylabs.io/) that you can create a free account to store your images. If you have a few small images this can work, but note that the space is limited and fills up quickly. You likely will need to pay to use it in a substantial way.
+
+### Singularity Registry Server
+
+[Singularity Register Server](https://singularityhub.github.io/sregistry/) (sregistry) is the open source version of Singularity Hub. It serves the Sylabs developed library API, so the Singularity software can interact with it natively. It is not an OCI registry proper, so it's not a highly recommended tool, but if you center needs to deploy a registry for users to pull with Singularity, this will fit the bill. It can be deployed with docker-compose, ansible, or (upon request) could easily work with Kubernetes.
+
+### Singularity Hub
+
+While [Singularity Hub](https://singularityhub.github.io/singularityhub-docs/) is no longer online, it was the first Singularity container registry,
+and maintained by [@vsoch](https://github.com/vsoch) single-handedly for the 5 years she worked at Stanford. She could not take it with her, so the
+registry was [converted to an archive](https://singularityhub.github.io/singularityhub-docs/2021/going-read-only/) that now is hosted at Dartmouth via the [Datalad project](https://singularity-hub.org/). As a promise of reproducibility, all of the containers that were available via the `shub://` URI are still pullable, and without any rate-limits as Singularity Hub was [forced to implement](https://singularityhub.github.io/singularityhub-docs/2019/release-announcement/) in 2019.
+
+
 
 ## Project History
 

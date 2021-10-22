@@ -13,6 +13,8 @@
       children:
         - title: SLURM
           url: docs/schedulers/slurm
+        - title: Sun Grid Engine
+          url: docs/schedulers/sge
     - title: Building and Packaging
       url: docs/packaging
       children:
@@ -36,10 +38,8 @@
 #      url: "docs/open-source"
 #    - title: Building, Packaging, Application Development
 #      url: "docs/building"
-#    - title: Monitoring
-#      url: "docs/monitoring"
-#    - title: Web Interfaces
-#      url: "docs/web-interfaces"
+    - title: Monitoring
+      url: "docs/monitoring"
 #    - title: Continous Integration and Delivery
 #      url: "docs/ci-cd"
     - title: "Getting Started"

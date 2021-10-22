@@ -26,3 +26,12 @@ I should be able to easily:
 Generally, a distribution comes down to a strategy that includes software, servers, and databases to fulfill these goals.
 The [distribution specification](https://github.com/opencontainers/distribution-spec/blob/master/spec.md) helps to outline a lot of the interactions to make this possible.
 
+## Registry Options
+
+So you have a container, where should you put it? Here are some recommendations.
+
+ - [GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry): supports both Docker and "OCI registry as storage" artifacts, which includes Singularity images. 
+ - [Docker Hub](https://hub.docker.com/): of course was the "first" container registry, however be careful in using it because you would be required to put an account token (with access to all your repos) in a CI service. They have also toyed with purging old images and have implemented [rate limiting](https://www.docker.com/increase-rate-limits), so while it's an option, it's not highly recommended.
+ - [Quay.io](https://quay.io/): is provided by RedHat, and is a nice registry because there are currently no limits on containers or pulling, and you can generate bots with repository specific tokens and permissions. How do you pronounce it? You probably want to say "KWAY" but I believe it's correctly pronounced "KEY."
+  
+If you are deploying from GitHub, there is a nice template [here](https://github.com/autamus/container-builder-template) to demonstrate pushing to each of an OCI registry (Docker Hub, Quay.io) or GitHub packages. If you are wanting to deploy Singularity (SIF) images in the same manner, use [this template](https://github.com/singularityhub/github-ci).

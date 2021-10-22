@@ -115,3 +115,4 @@ to see the server running.
 - code blocks should be copy-pasteable
 - some code blocks could be runnable!
 - site should render into pdf
+- spell checking
