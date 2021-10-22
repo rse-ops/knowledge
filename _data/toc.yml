@@ -18,6 +18,8 @@
       children:
         - title: Python
           url: docs/packaging/python
+        - title: Environments
+          url: docs/packaging/environments
     - title: Interfaces
       url: docs/interfaces
 #    - title: Version Control
