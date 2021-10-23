@@ -17,7 +17,7 @@ Read more to learn about how they work!
 
 ## Background
 
-You can think of environment modules like a little collection of sofware and versions that can easily be loaded by a user, and typically
+You can think of environment modules like a little collection of software and versions that can easily be loaded by a user, and typically
 are maintainer by a cluster administrator. Using this approach on high performance computing clusters [[1]] is common
 because it allows different versions of software to co-exist, and for the user to load things as needed.
 Although writing the recipes can be complex, it's a fairly common practice for cluster administrators to provide

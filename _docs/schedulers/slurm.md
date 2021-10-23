@@ -11,7 +11,7 @@ links:
     link: http://slurm.schedmd.com/pdfs/summary.pdf
   - name: SGE to SLURM Max Planck
     external_url: https://www.mpcdf.mpg.de/services/computing/linux/migration-from-sge-to-slurm
-  - name: SGE to SLURM Converstion from Stanford
+  - name: SGE to SLURM Conversion from Stanford
     url: https://srcc.stanford.edu/sge-slurm-conversion
   - name: AskCI Site SLURM
     external_url: https://ask.cyberinfrastructure.org/search?q=slurm
@@ -203,7 +203,7 @@ An example job script is shown below.
 Rscript $HOME/shapleyProbeSets.R $SCRATCH/DATA/input.tab 0.05 1000 myJob.R
 ```
 
-The above job will submit a job named `TRM000_phonetic.job`, and write to correponding error and output files. It will
+The above job will submit a job named `TRM000_phonetic.job`, and write to corresponding error and output files. It will
 have a maximum run time of 2 days, ask for 12GB memory, and be submit to the normal queue.
 
 Here is another example batch file with directives that reserve one node in the default queue, with 16 cores and exclusive use of the node:

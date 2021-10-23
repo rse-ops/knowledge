@@ -149,11 +149,11 @@ If you don't want to add it, you can search and specify it directly (and this ap
 $ conda search --channel conda-forge deid
 ```
 
-Sometimes conda forge will have a release of common software (e.g., R) before official Anaconda - the two communities collaborate together and conda-forge can be seen like a bit of a testing ground. Finally, remember that when you are interacting with your environmet programatically, such as in a script, you'll need to activate the environment first and then interact with it.
+Sometimes conda forge will have a release of common software (e.g., R) before official Anaconda - the two communities collaborate together and conda-forge can be seen like a bit of a testing ground. Finally, remember that when you are interacting with your environment programatically, such as in a script, you'll need to activate the environment first and then interact with it.
 
 ## Mamba
 
-A [Mamba](https://en.wikipedia.org/wiki/Mamba) is another fast-moving, venemous snake, and another
+A [Mamba](https://en.wikipedia.org/wiki/Mamba) is another fast-moving, venomous snake, and another
 [cross platform package manager](https://github.com/mamba-org/mamba)! Some people choose to use it because it's
 faster to resolve environments than Anaconda or Miniconda. You can actually install it with conda, and this is the
 recommended approach:

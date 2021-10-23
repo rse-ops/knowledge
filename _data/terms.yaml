@@ -1,7 +1,7 @@
 - name: AWS
   definition: Amazon Web Services
 - name: CI
-  definition: Continous Integration
+  definition: Continuous Integration
 - name: FaaS
   definition: Functions as a Service. Generally when you see something ending in aaS, it means "as a service."
 - name: HPC

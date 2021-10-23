@@ -58,7 +58,7 @@ Here are some common commands and flags in SGE and SLURM with their respective e
 | **Charge to an account** | -A \[account\] | --account=\[account\] |
 | **Tasks per node** | (Fixed allocation_rule in PE) | --tasks-per-node=\[count\] |
 |     |     | --cpus-per-task=\[count\] |
-| **Job dependancy** | -hold\_jid \[job\_id \| job_name\] | --depend=\[state:job_id\] |
+| **Job dependency** | -hold\_jid \[job\_id \| job_name\] | --depend=\[state:job_id\] |
 | **Job project** | -P \[name\] | --wckey=\[name\] |
 | **Job host preference** | -q \[queue\]@\[node\] OR -q  <br>\[queue\]@@\[hostgroup\] | --nodelist=\[nodes\] AND/OR --exclude=  <br>\[nodes\] |
 | **Quality of service** |     | --qos=\[name\] |
