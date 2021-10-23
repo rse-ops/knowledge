@@ -40,7 +40,7 @@
 #      url: "docs/building"
     - title: Monitoring
       url: "docs/monitoring"
-#    - title: Continous Integration and Delivery
+#    - title: Continuous Integration and Delivery
 #      url: "docs/ci-cd"
     - title: "Getting Started"
       children:

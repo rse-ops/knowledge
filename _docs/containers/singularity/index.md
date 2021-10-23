@@ -168,7 +168,7 @@ $ singularity run --pwd /code container.sif
 Singularity is great because most of the time, you don't need to think about
 binds. The paths that you use most often (e.g., your home and scratch and tmp)
 are "inside" the container. I hesitate to use that word because the
-boundry really is seamless. Thus, if your host supports 
+boundary really is seamless. Thus, if your host supports 
 <a href="https://en.wikipedia.org/wiki/OverlayFS" target="_blank">overlayfs</a> and the configuration allows it, your container
 will by default see all the bind mounts on the host. You can specify a custom mount 
 (again if the administrative configuration allows it) with `-B` or `--bind`.

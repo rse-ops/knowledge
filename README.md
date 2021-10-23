@@ -42,7 +42,7 @@ terms:
    definition: The most delicious of things.
 ```
 
-### 3. Options
+#### Options
 
 Most of the configuration values in the [_config.yml](https://github.com/rse-ops/knowledge/blob/main/_config.yml) are self explanatory,
 and for more details, see the [Developer getting started](https://rse-ops.github.io/knowledge/docs/developer)
@@ -60,7 +60,18 @@ bundle exec jekyll serve
 
 **NOTE:** If the above serve command throws an error saying `require': cannot load such file -- webrick (LoadError)` try to run `bundle add webrick` to automatically add the webrick gem to your Gemfile, or manually add `gem "webrick"` line to the Gemfile and then run the serve command again.
 
-### 5. Run as a container in dev or prod
+### 5. Pull Request
+
+We recommend that you submit your changes as a pull request, as we can review them and also have the spelling automatically checked.
+If you want to check spelling on your own, you can install [https://github.com/crate-ci/typos](https://github.com/crate-ci/typos) and then run
+the executable on the various folders:
+
+```bash
+$ typos ./_docs ./pages ./_data ./_posts 
+```
+If you don't want to do this, it will run during the CI, and you can see your typos in the GitHub workflow interface.
+
+### Container Development
 
 #### Software Dependencies
 
@@ -115,4 +126,3 @@ to see the server running.
 - code blocks should be copy-pasteable
 - some code blocks could be runnable!
 - site should render into pdf
-- spell checking

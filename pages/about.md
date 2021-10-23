@@ -10,7 +10,7 @@ for good practices and tools in the Research Software Engineering community. If 
 you to read more at the [landscape](https://rse-ops.github.io/landscape/). All whom are interested are invited
 to participate in this community, and we invite you to ask questions or open an issue.
 The knowledge base itself is intended for native deployment on GitHub pages to ensure that contribution is easy - the
-same way you'd contribute to code you can contribute to the resources here. See the [respository](https://github.com/{{ site.github_user }}/{{ site.github_repo }}) for more details.
+same way you'd contribute to code you can contribute to the resources here. See the [repository](https://github.com/{{ site.github_user }}/{{ site.github_repo }}) for more details.
 
 ## Support
 
