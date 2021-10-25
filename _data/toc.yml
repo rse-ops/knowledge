@@ -24,8 +24,11 @@
           url: docs/packaging/environments
     - title: Interfaces
       url: docs/interfaces
-#    - title: Version Control
-#      url: "docs/version-control"
+    - title: Version Control
+      url: "docs/version-control"
+      children:
+        - title: GitHub
+          url: docs/version-control/github
     - title: Programming Languages
       url: "docs/programming-languages"
       children:
