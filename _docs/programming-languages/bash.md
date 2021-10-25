@@ -125,7 +125,7 @@ $ calc "1024*8"       # Convert KB into MB
 8192
 ```
 ```bash
-$ calc "40*1.8+32"    # Convert Celcius to Fahrenheit
+$ calc "40*1.8+32"    # Convert Celsius to Fahrenheit
 104.0
 ```
 ```bash
