@@ -26,8 +26,11 @@
       url: docs/interfaces
 #    - title: Version Control
 #      url: "docs/version-control"
-#    - title: Programming Languages
-#      url: "docs/programming-languages"
+    - title: Programming Languages
+      url: "docs/programming-languages"
+      children:
+        - title: Bash
+          url: docs/programming-languages/bash
 #    - title: Compilers
 #      url: "docs/compilers"
 #    - title: Linux Operating Systems
