@@ -11,6 +11,24 @@ tutorials:
     links:
      - name: Spack 101 Tutorial
        url: https://spack-tutorial.readthedocs.io/en/latest/
+     - name: Spack Environments Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_environments.html
+     - name: Spack Configuration Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_configuration.html
+     - name: Spack Package Creation Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_packaging.html
+     - name: Spack Developer Workflows Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_packaging.html
+     - name: Spack Mirror Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_binary_cache.html
+     - name: Spack Stacks Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_stacks.html
+     - name: Scripting with Spack
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_spack_scripting.html
+     - name: Module File Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_modules.html
+     - name: Advanced Packaging Tutorial
+       url: https://spack-tutorial.readthedocs.io/en/latest/tutorial_advanced_packaging.html
   - name: Containers
     links:
      - name: Spack Containers via Autamus
@@ -151,6 +169,48 @@ $ spack uninstall --all trilinos
 # And dependencies too!
 $ spack uninstall --dependents --all trilinos
 ```
+
+#### Install with an environment
+
+A spack environment is akin to any other virtual environment in that you are going to activate it, install stuff, and then deactivate. It's convenient for keeping things modular and organized. You'll want to create, and install things to your environment.
+
+```bash
+# create an environment called "myproject"
+$ spack env create myproject
+
+# remember what we called it (and others?)
+$ spack env list
+==> 1 environments
+    myproject
+
+# Activate it!
+$ spack env activate myproject
+
+# I forgot if I'm in an environment?
+$ spack env status
+==> In environment myproject
+
+# Add some packages to install
+$ spack add zlib
+$ spack add singularity
+
+# Do the install
+$ spack install
+
+# or instead just install in serial
+$ spack install zlib
+$ spack install singularity
+
+# In the environment, installs are on your PATH!
+$ which singularity
+../myproject/.spack-env/view/bin/singularity
+
+# deactivate
+$ spack env deactivate
+```
+
+You can see the full, detailed spack environments tutorial [here](https://spack-tutorial.readthedocs.io/en/latest/tutorial_environments.html).
+
 
 ## Other questions?
 If you have other questions, or want help for your project, please don't hesitate to <a href="https://github.com/rse-ops/knowledge/issues">reach out</a>.
