@@ -20,6 +20,8 @@
       children:
         - title: Python
           url: docs/packaging/python
+        - title: Spack
+          url: docs/packaging/spack
         - title: Environments
           url: docs/packaging/environments
     - title: Interfaces
