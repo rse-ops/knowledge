@@ -1,0 +1,670 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../_static/favicon.ico">
+    
+    
+      
+        <title>Docker - RSE-OPS Knowledge</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.fa3fbbd75cfdd7cef.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/rtd_sphinx_search.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- Social: Facebook / Open Graph -->
+<title>RSE-OPS Knowledge </title>
+<link rel="canonical" href="https://rse-ops.github.io/knowledge/"/>
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://rse-ops.github.io/knowledge/">
+<meta property="og:title" content="RSE-OPS Knowledge">
+<meta property="og:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<meta property="og:description" content="RSE-OPS Knowledge ">
+<meta property="og:site_name" content="RSE-OPS Knowledge">
+<meta property="og:locale" content="en_US">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@vsoch">
+<meta name="twitter:title" content="vanessasaurus on Twitter">
+<meta name="twitter:description" content="Ping our developers on Twitter">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="RSE-OPS Knowledge">
+<meta itemprop="description" content="RSE-OPS Knowledge">
+<meta itemprop="image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<script type="application/ld+json">
+  {"@type":"WebSite","headline":"RSE-OPS Knowledge","url":"https://rse-ops.github.io/knowledge","description":"The RSE-OPS Knowledge base ","name":"RSE-OPS Knowledge","@context":"https://schema.org"}
+</script>
+
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.sphx-glr-script-out .highlight pre {
+  background-color: #def0ff !important;
+}
+  </style>
+
+
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="RSE-OPS Knowledge" class="md-header__button md-logo" aria-label="RSE-OPS Knowledge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RSE-OPS Knowledge
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Docker
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rse-ops/knowledge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RSE-OPS Knowledge
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Documentation</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../about/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">About</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="RSE-OPS Knowledge" class="md-nav__button md-logo" aria-label="RSE-OPS Knowledge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    RSE-OPS Knowledge
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rse-ops/knowledge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RSE-OPS Knowledge
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Documentation</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        <span title="/docs/index.md (reference label)" class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">About</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">About</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/index.html" class="md-nav__link">
+        <span title="/about/index.md (reference label)" class="md-ellipsis">About RSE-<wbr>OPS</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/rse-ops/knowledge/blob/main/docs/docs/containers/docker/container-images.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permalink to this heading">¶</a></h1>
+<p>Docker is one of the most well known container technologies, developed by <a class="reference external" href="https://www.docker.com/">Docker Inc.</a>
+that was founded in 2008, but really took off as early as 2014. To understand Docker, we should probably start with containers.</p>
+<h2 id="introduction-to-containers">Introduction to Containers<a class="headerlink" href="#introduction-to-containers" title="Permalink to this heading">¶</a></h2>
+<p>A container is a portable encapsulation of an environment [<a class="reference external" href="https://en.wikipedia.org/wiki/Container_(virtualization)">1</a>].
+It’s a way for you to package an entire operating system, libraries, and software into a package that you can move and run anywhere.
+That is the quick and dirty definition, but today we are going to delive a little more into what this actually means.</p>
+<h2 id="container-basics">Container Basics<a class="headerlink" href="#container-basics" title="Permalink to this heading">¶</a></h2>
+<h3 id="what-problems-do-containers-solve">What problems do containers solve?<a class="headerlink" href="#what-problems-do-containers-solve" title="Permalink to this heading">¶</a></h3>
+<h4 id="reproducibility">Reproducibility<a class="headerlink" href="#reproducibility" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>We have differences in environments, hardware, and even security, and this makes sharing of applications challenging.
+A <em>reproducible</em> workflow that uses containers helps us get around this problem, and (hopefully) reduce the frequency of uttering the phrase <em>But it ran on my computer!</em></p>
+<h4 id="portability">Portability<a class="headerlink" href="#portability" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>The ability to easily move a container from one machine to another is easily afforded by the fact that many container formats are variations on a compressed filesystem.
+If you wanted to share your entire computer, right now, you would have a hard time doing that.</p>
+<h4 id="development-environments">Development Environments<a class="headerlink" href="#development-environments" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>It used to be the case that to develop a simple model - view - control (MVC) application with some application, database, and web server, you would need to install and run the components on your host.
+It would be very challenging to work on multiple projects at once, because different projects might have different dependencies.
+Containers are essential for developers because they allow us to spin up an entire set of components for a specific development environment, and then bring it down just as easily.</p>
+<h4 id="continuous-integration">Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>The same is true for testing, using containers one can easily test across operating systems from a single host.</p>
+<h4 id="flexible">Flexible<a class="headerlink" href="#flexible" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>The technologies that we use must be flexible to change.
+The resources that we invest in are ephemeral, and change is unavoidable.
+For a concrete example. let’s say you are running a complex (containerized) application on a cloud provider.
+The costs of the provider changes, and you need to do a quick switch!
+Since your application is containerized, you can easily change providers.
+You aren’t forced becoming locked into a cloud vendor. You are a free container whale!</p>
+<h4 id="isolation">Isolation<a class="headerlink" href="#isolation" title="Permalink to this heading">¶</a></h4>
+<p>{: .no_toc }</p>
+<p>While the level of isolation can vary based on the container technology, containers generally allow you to isolate an application or component from your host.
+This is incredibly useful if you have packages with conflicting dependencies that need to run on the same host.</p>
+<h2 id="virtualization">Virtualization<a class="headerlink" href="#virtualization" title="Permalink to this heading">¶</a></h2>
+<p>{: .no_toc }</p>
+<p>You might be familiar with the idea of a <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_machine">virtual machine</a> (VM), which was, for some of us, our first foray into virtualization. In a bucket:</p>
+<ul class="simple">
+<li><p>A hypervisor is based on emulating hardware.</p></li>
+<li><p>When we emulate hardware, this is called virtualization.</p></li>
+</ul>
+<p>While the term “virtual machine” is used in different contexts and can spawn much disagreement about its definition, for the time being let’s abstractly talk about the differences between <em>containers</em> and <em>hypervisors</em>.
+The biggest difference was already stated - <strong>hypervisor emulation is based on emulating hardware</strong>.
+With this kind of technology, we take a machine and it emulates virtual hardware, and then bring up another operating system on top of that hardware.
+There is a nice slide to show <a class="reference external" href="https://www.slideshare.net/Docker/introduction-to-docker-2017/18">hypervisor based virutualization here</a>.</p>
+<p>Containers are about virtualizing the subsystems of the operating system itself.
+We take services that the operating system provides (networking, filesystem, etc.) and provide them in a way that is virtuaizable.
+This means that I can bring up different copies of an operating system on the same kernel.
+We are using features of the kernel.
+So you can think of containers as running at the level of the kernel, and this is different from hypervisors that run one level down, and try to emulate the hardware.</p>
+<ul class="simple">
+<li><p>Containers: have a <strong>single</strong> kernels running underneath them</p></li>
+<li><p>Hypervisors: have <strong>multiple</strong> kernels</p></li>
+</ul>
+<p>A cool result of this, given that you have a single kernel, is that if you fix or update that kernel, all the “guests” running off it also get patched.</p>
+<p>For memory, a hypervisor can only see pages.
+It doesn’t know what each guest is doing.
+With a container, under a single kernel the single kernel can see all objects and usage inside each container to make resource decisions.
+For this reason the resource decisions are made much more efficient.</p>
+<h3 id="what-is-a-virtual-machine">What is a virtual machine?<a class="headerlink" href="#what-is-a-virtual-machine" title="Permalink to this heading">¶</a></h3>
+<p>Now we can tell you that a virtual machine runs on a hypervisor, and we have a hardware layer, an entire entire operating system, and then libraries and applications on top of it. A VM is a very needy fellow:</p>
+<ul class="simple">
+<li><p>Each VM requires CPU, storage, memory, and an entire operating system</p></li>
+<li><p>More VMs == more resources!</p></li>
+<li><p>Portability is not guaranteed</p></li>
+</ul>
+<p>The need to allocate more system resources makes them a lot fatter and less portable than containers.
+For a ballpark comparison, a hypervisor image is typically gigabytes, and a container can be in the order of megabytes.
+You’ve probably heard people talk about containers and use terms like “lightweight” and “efficient.”
+I found a nice slide to show the differences <a class="reference external" href="https://www.slideshare.net/Docker/introduction-to-docker-2017/22">here</a>.</p>
+<h3 id="linux-container-api">Linux Container API<a class="headerlink" href="#linux-container-api" title="Permalink to this heading">¶</a></h3>
+<p>So if containers are so great, why did they only “become a thing” around 2014?
+The short answer is that Docker came along and gave us “mere mortals” an ecosystem for building, pushing, pulling and running containers.
+This was a product that simplified the complexity of underlying linux’ isolation APIs: cgroups and namespaces.</p>
+<ul class="simple">
+<li><p><em>cgroups</em>: controls resources within the kernel (io, cpu, devices, memory, network). There is something called a “freezer” that you put a bunch of processes into and put them to sleep without worrying about resources between them.</p></li>
+<li><p><em>namespaces</em>: provide a pure isolation layer inside the kernel. Most of the time, resources only belong to a single one, for example:</p>
+<ul>
+<li><p>networking devices go in networking namespaces</p></li>
+<li><p>ipc namespace for messages between containers</p></li>
+<li><p>mount namespace for filesystem tree</p></li>
+<li><p>pid namespace - init in linux needs to be running as pid 1 it isolates the process tree between containers</p></li>
+<li><p>UTS namespace because each container needs a separate hostname,</p></li>
+<li><p>User namespace is important for “pretending to be root” without being root.)</p></li>
+</ul>
+</li>
+</ul>
+<p>For those interested, there is a good talk about the history of the Linux Containers API development <a class="reference external" href="https://www.youtube.com/watch?v=YsYzMPptB-k#t=18m10s">here</a>.
+In early containers, you could break from a container and become root on the host.
+While running as root is a desired or necessary feature for many applications, unexpected container breakouts are a bad security risk that container runtimes have worked hard to prohibit.
+These core isolation APIs are for the most part the same for all linux distros.</p>
+<p>A fun history fact (and maybe you already figured this about because you watched the video links above!).
+These two things (cgroups and namespaces) were developed by different open source groups.
+This came from an agreement at a conference in 2011 called the <a class="reference external" href="https://lwn.net/Articles/KernelSummit2011/">Kernel Summit</a>, literally a bunch of people sitting in a room that had both developed technologies they wanted added to the linux kernel, and had to go through the feature process and argue their case independently.
+At the end we did get a single container isolation API, but it had these two different components.<br />
+If you are interested in learning about platform specific runtime differences, see the <a class="reference external" href="https://github.com/opencontainers/runtime-spec/blob/master/implementations.md">runtime-spec</a> repository.</p>
+<h2 id="containers">Containers<a class="headerlink" href="#containers" title="Permalink to this heading">¶</a></h2>
+<p>Everything that claims to be a container technology is basically orchestrating these components.
+You can draw boxes on your powerpoint, call the boxes containers “packages” or “encapsulated environments” or what not - but low level container runtimes must include system isolation.</p>
+<p>Containers:</p>
+<ul class="simple">
+<li><p>are encapsulations of an environment</p></li>
+<li><p>have their own process namespace</p></li>
+<li><p>the root process of the container container on the host is still associated with one parent process, and when you start the root process the set of child processes within the container might kick off, and when you kill the root process the container’s child processes are also killed.</p></li>
+</ul>
+<h3 id="container-namespaces">Container Namespaces<a class="headerlink" href="#container-namespaces" title="Permalink to this heading">¶</a></h3>
+<p>Akin to the namespaces on your host, a container also has its own namespace, or may be associated with a namespace shared by a group of containers.
+Here it is helpful to think of a container like a little packaged environment, one that you can actually shell into like you would a server.
+When I shell inside the container I find that it has its own little process namespace.</p>
+<h3 id="container-cgroups">Container Cgroups<a class="headerlink" href="#container-cgroups" title="Permalink to this heading">¶</a></h3>
+<p>A cgroup is a “control group” and it’s exactly that - a feature of the kernel that lets you allocate permissions for resources.
+So, for example, I might allocate a particular amount of memory, or CPU time, or network bandwidth to a set of tasks (processes that are running on my computer.)
+What else can we do?
+We can monitor them, reconfigure them, and even deny them access to resources.
+Containers also have their own set of cgroups.</p>
+<h2 id="what-about-a-container-image">What about a container image?<a class="headerlink" href="#what-about-a-container-image" title="Permalink to this heading">¶</a></h2>
+<p>The words “container” and “image” are sometimes used synonymously, but are subtly two different things.
+You can think of a container image as a template, and a container is one or more running instances of that template.
+In more concrete terms, the image is one or more binary blobs sitting on your filesystem, ready to instantiate to create an isolated, encapsulated environment.</p>
+<h2 id="example-interactions">Example Interactions<a class="headerlink" href="#example-interactions" title="Permalink to this heading">¶</a></h2>
+<p>Let’s give a concrete example of how you might use a container.
+Let’s say you are a scientist, and a life changing paper just came out that describes how to estimate an optimal cheese eating time based on measured properties of the cheese.
+You’ve been collecting cheeses for decades, you can easily collect the metrics needed, and you just need the software.</p>
+<h3 id="you-find-container-images-in-a-registry">1. You find container images in a registry<a class="headerlink" href="#you-find-container-images-in-a-registry" title="Permalink to this heading">¶</a></h3>
+<p>{: .no-toc }</p>
+<p>Thankfully, the scientist created the container you need and pushed it to <a class="reference external" href="https://hub.docker.com/">Docker Hub</a> so all you need to do is:</p>
+<ol class="arabic simple">
+<li><p>Install a container runtime, such as Docker, to manage OCI containers</p></li>
+<li><p>Run the container with your input parameters (if the container isn’t in your cache, it will be pulled)</p></li>
+</ol>
+<p>That is it, and truly it is that easy!</p>
+<h3 id="you-want-to-change-the-cheese-algorithm">2. You want to change the cheese algorithm<a class="headerlink" href="#you-want-to-change-the-cheese-algorithm" title="Permalink to this heading">¶</a></h3>
+<p>{: .no-toc }</p>
+<p>Uhoh, the scientist calculated the relationship between the moisture content of cheese completely wrong, and you need to modify his code and then write your own paper to refute his claims.
+Dry cheese, like cheddar, deserves just as high of a rating!
+In this case, you would:</p>
+<ol class="arabic simple">
+<li><p>Find the container recipe, which is an Docker build specification file in this case</p></li>
+<li><p>Build and run your new container</p></li>
+<li><p>Modify it as desired, and continue testing and modifying until you get the desired result</p></li>
+</ol>
+<p>And you could equally publish your container and findings.
+This is a good example of how containers support reproducible science.</p>
+<p>Resources:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.vmware.com/solutions/cloud-native-apps.html">VMWare: Ben Corrie Sr. Staff Engineer</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/ch01">RedHat: Control Groups</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/watch?v=YsYzMPptB-k">Beginners Guide to Containers Technology</a></li>
+</ul>
+</div>
+
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      Feb 02, 2023
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2023, RADIUSS Developers.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    5.3.0.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/flux-framework/flux-operator" target="_blank" rel="noopener" title="Flux Operator on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://flux-framework.org/" target="_blank" rel="noopener" title="Flux Framework" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2.05c5.05.5 9 4.77 9 9.95 0 1.45-.32 2.83-.88 4.07l-2.62-1.53c.32-.79.5-1.64.5-2.54 0-3.53-2.61-6.43-6-6.92V2.05M12 19c2.21 0 4.17-1 5.45-2.62l2.6 1.53A9.97 9.97 0 0 1 12 22C6.47 22 2 17.5 2 12a9.99 9.99 0 0 1 9-9.95v3.03C7.61 5.57 5 8.47 5 12a7 7 0 0 0 7 7m0-13a6 6 0 0 1 6 6c0 2.97-2.16 5.44-5 5.92v-3.09c1.17-.41 2-1.52 2-2.83a3 3 0 0 0-3-3l-.55.05-1.54-2.67C10.56 6.13 11.26 6 12 6m-6 6c0-1.86.85-3.5 2.18-4.62l1.54 2.67C9.27 10.57 9 11.26 9 12c0 1.31.83 2.42 2 2.83v3.09c-2.84-.48-5-2.95-5-5.92Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "toc.integrate", "navigation.sections", "navigation.instant", "header.autohide", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../../../_static/sphinx_immaterial_theme.cea6a0c1d5b0618cf.min.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/rtd_sphinx_search.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+  </body>
+</html>

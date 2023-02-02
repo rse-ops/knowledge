@@ -1,0 +1,1155 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../_static/favicon.ico">
+    
+    
+      
+        <title>Contributing to a Community - RSE-OPS Knowledge</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.fa3fbbd75cfdd7cef.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/rtd_sphinx_search.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- Social: Facebook / Open Graph -->
+<title>RSE-OPS Knowledge </title>
+<link rel="canonical" href="https://rse-ops.github.io/knowledge/"/>
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://rse-ops.github.io/knowledge/">
+<meta property="og:title" content="RSE-OPS Knowledge">
+<meta property="og:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<meta property="og:description" content="RSE-OPS Knowledge ">
+<meta property="og:site_name" content="RSE-OPS Knowledge">
+<meta property="og:locale" content="en_US">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@vsoch">
+<meta name="twitter:title" content="vanessasaurus on Twitter">
+<meta name="twitter:description" content="Ping our developers on Twitter">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="RSE-OPS Knowledge">
+<meta itemprop="description" content="RSE-OPS Knowledge">
+<meta itemprop="image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<script type="application/ld+json">
+  {"@type":"WebSite","headline":"RSE-OPS Knowledge","url":"https://rse-ops.github.io/knowledge","description":"The RSE-OPS Knowledge base ","name":"RSE-OPS Knowledge","@context":"https://schema.org"}
+</script>
+
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.sphx-glr-script-out .highlight pre {
+  background-color: #def0ff !important;
+}
+  </style>
+
+
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="RSE-OPS Knowledge" class="md-header__button md-logo" aria-label="RSE-OPS Knowledge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RSE-OPS Knowledge
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contributing to a Community
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rse-ops/knowledge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RSE-OPS Knowledge
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../index.html" class="md-tabs__link md-tabs__link--active">
+      <span class="md-ellipsis">Documentation</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">About</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="RSE-OPS Knowledge" class="md-nav__button md-logo" aria-label="RSE-OPS Knowledge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    RSE-OPS Knowledge
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rse-ops/knowledge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RSE-OPS Knowledge
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Documentation</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../index.html"><span title="/docs/index.md (reference label)" class="md-ellipsis">Documentation</span></a>
+          
+            <label for="__nav_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span title="/docs/index.md (reference label)" class="md-ellipsis">Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../containers/index.html" class="md-nav__link">
+        <span title="/docs/containers/index.md (reference label)" class="md-ellipsis">Containers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/index.html" class="md-nav__link">
+        <span title="/docs/interfaces/index.md (reference label)" class="md-ellipsis">Interfaces</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitoring/index.html" class="md-nav__link">
+        <span title="/docs/monitoring/index.md (reference label)" class="md-ellipsis">Monitoring</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../packaging/index.html" class="md-nav__link">
+        <span title="/docs/packaging/index.md (reference label)" class="md-ellipsis">Packaging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming-languages/index.html" class="md-nav__link">
+        <span title="/docs/programming-languages/index.md (reference label)" class="md-ellipsis">Programming Languages</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedulers/index.html" class="md-nav__link">
+        <span title="/docs/schedulers/index.md (reference label)" class="md-ellipsis">Scheduling</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1_7" type="checkbox" id="__nav_1_1_7" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html"><span title="/docs/version-control/index.md (reference label)" class="md-ellipsis">Version Control</span></a>
+          
+            <label for="__nav_1_1_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Version Control" data-md-level="3">
+        <label class="md-nav__title" for="__nav_1_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span title="/docs/version-control/index.md (reference label)" class="md-ellipsis">Version Control</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1_7_1" type="checkbox" id="__nav_1_1_7_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#version-control-systems"><span title="/docs/version-control/index.md#version-control-systems (reference label)" class="md-ellipsis">Version Control Systems</span></a>
+          
+            <label for="__nav_1_1_7_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Version Control Systems" data-md-level="4">
+        <label class="md-nav__title" for="__nav_1_1_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span title="/docs/version-control/index.md#version-control-systems (reference label)" class="md-ellipsis">Version Control Systems</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="/docs/version-control/github.md (reference label)" class="md-ellipsis">Contributing to a Community</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span title="/docs/version-control/github.md (reference label)" class="md-ellipsis">Contributing to a Community</span>
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-we-use-github" class="md-nav__link">
+    <span title="/docs/version-control/github.md#why-do-we-use-github (reference label)" class="md-ellipsis">Why do we use Git<wbr>Hub?</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why do we use GitHub?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permissionless-collaboration" class="md-nav__link">
+    <span title="/docs/version-control/github.md#permissionless-collaboration (reference label)" class="md-ellipsis">Permissionless collaboration</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-reviewing-tools" class="md-nav__link">
+    <span title="/docs/version-control/github.md#advanced-reviewing-tools (reference label)" class="md-ellipsis">Advanced reviewing tools</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-history" class="md-nav__link">
+    <span title="/docs/version-control/github.md#detailed-history (reference label)" class="md-ellipsis">Detailed history</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-interfaces" class="md-nav__link">
+    <span title="/docs/version-control/github.md#web-interfaces (reference label)" class="md-ellipsis">Web Interfaces</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-i-use-github-if-i-m-not-a-programmer" class="md-nav__link">
+    <span title="/docs/version-control/github.md#can-i-use-github-if-i-m-not-a-programmer (reference label)" class="md-ellipsis">Can I use Git<wbr>Hub if I’m not a programmer?</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-mindset-should-i-have-when-contributing" class="md-nav__link">
+    <span title="/docs/version-control/github.md#what-mindset-should-i-have-when-contributing (reference label)" class="md-ellipsis">What mindset should I have when contributing?</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What mindset should I have when contributing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inexperienced-incapable" class="md-nav__link">
+    <span title="/docs/version-control/github.md#inexperienced-incapable (reference label)" class="md-ellipsis">Inexperienced != Incapable</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#it-s-okay-to-ask-for-help" class="md-nav__link">
+    <span title="/docs/version-control/github.md#it-s-okay-to-ask-for-help (reference label)" class="md-ellipsis">It’s okay to ask for help</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-will-improve" class="md-nav__link">
+    <span title="/docs/version-control/github.md#i-will-improve (reference label)" class="md-ellipsis">I will improve</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-github" class="md-nav__link">
+    <span title="/docs/version-control/github.md#getting-started-with-github (reference label)" class="md-ellipsis">Getting Started with Git<wbr>Hub</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-an-account-on-github" class="md-nav__link">
+    <span title="/docs/version-control/github.md#create-an-account-on-github (reference label)" class="md-ellipsis">1.<wbr> Create an account on Git<wbr>Hub</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-git" class="md-nav__link">
+    <span title="/docs/version-control/github.md#install-git (reference label)" class="md-ellipsis">2.<wbr> Install git</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fork-the-repository" class="md-nav__link">
+    <span title="/docs/version-control/github.md#fork-the-repository (reference label)" class="md-ellipsis">3.<wbr> Fork the Repository</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-your-fork" class="md-nav__link">
+    <span title="/docs/version-control/github.md#clone-your-fork (reference label)" class="md-ellipsis">4.<wbr> Clone your Fork</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-a-change" class="md-nav__link">
+    <span title="/docs/version-control/github.md#make-a-change (reference label)" class="md-ellipsis">5.<wbr> Make a Change</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-the-change" class="md-nav__link">
+    <span title="/docs/version-control/github.md#commit-the-change (reference label)" class="md-ellipsis">6.<wbr> Commit the Change</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-to-your-fork-branch" class="md-nav__link">
+    <span title="/docs/version-control/github.md#push-to-your-fork-branch (reference label)" class="md-ellipsis">7.<wbr> Push to your fork branch</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-pull-request" class="md-nav__link">
+    <span title="/docs/version-control/github.md#open-pull-request (reference label)" class="md-ellipsis">8.<wbr> Open Pull Request</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">About</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">About</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/index.html" class="md-nav__link">
+        <span title="/about/index.md (reference label)" class="md-ellipsis">About RSE-<wbr>OPS</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/rse-ops/knowledge/blob/main/docs/docs/version-control/github.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="contributing-to-a-community">Contributing to a Community<a class="headerlink" href="#contributing-to-a-community" title="Permalink to this heading">¶</a></h1>
+<h2 id="why-do-we-use-github">Why do we use GitHub?<a class="headerlink" href="#why-do-we-use-github" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="https://github.com">GitHub</a> is a place to collaborate.  You can think of it like a fun social
+network for people that like to code, where the unit of sharing is the code itself.
+It’s also good for documents and other files to be shared. But why GitHub, over say,
+some other shared file service like <a class="reference external" href="https://docs.google.com/">Google Docs</a>? Or why not
+just keep them on our local machines? GitHub offers us several nice features:</p>
+<ol class="arabic simple">
+<li><p>easily collaborate on common files</p></li>
+<li><p>advanced reviewing tools and version history</p></li>
+<li><p>keep a record of discussions, and every change made</p></li>
+<li><p>be able to revert back to previous versions, if needed</p></li>
+<li><p>create pretty web interfaces</p></li>
+</ol>
+<p>Some of the points above will be reviewed in more detail. If you don’t care about high level
+stuff, jump down to the <a class="reference external" href="http://127.0.0.1:4000/knowledge/docs/version-control/github#getting-started-with-github">Getting Started with Github</a>
+tutorial.</p>
+<h3 id="permissionless-collaboration">Permissionless collaboration<a class="headerlink" href="#permissionless-collaboration" title="Permalink to this heading">¶</a></h3>
+<p>Anyone can propose changes, of course given they <a class="reference external" href="https://github.com/join">sign up for a GitHub account</a>. You don’t need to be given permission to view or edit a document, as is required by some of the platforms mentioned previously. The design
+of GitHub works to provide a structured way to do it, which we will discuss in this short guide.</p>
+<h3 id="advanced-reviewing-tools">Advanced reviewing tools<a class="headerlink" href="#advanced-reviewing-tools" title="Permalink to this heading">¶</a></h3>
+<p>When you open up a Google Doc, you might be able to comment or write in revision mode, but
+when you do so, you are working with the entire document. GitHub allows
+you to separate your working changes from the production version, ensuring that review and discussion
+can proceed before anything is made final. If you imagine changes over time like a tree, git allows us to
+create separate branches with different change histories. We can then propose that our changes are integrated
+into the main branch, which is literally called “main.” By way of these branches, several people can work on their
+own special changes at the same time without it being confusing. Along with this more detailed ability to edit,
+there is an integrated approval workflow, straightforward visualizations of what changed, “diffs,”
+and powerful automatic testing (called continuous integration or CI). GitHub even has recently added more venues
+to have discussions, including <a class="reference external" href="https://docs.github.com/en/discussions">GitHub Discussions</a> and <a class="reference external" href="https://github.com/features/issues/">project planning</a>.
+The extent that you want to use these extra features is up to you and your team! For most, issues with <a class="reference external" href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels">labels</a>
+and milestones are sufficient.</p>
+<h3 id="detailed-history">Detailed history<a class="headerlink" href="#detailed-history" title="Permalink to this heading">¶</a></h3>
+<p>Lets say that you want to understand who added a piece of code, and when or why it was added?
+GitHub has something called <a class="reference external" href="https://help.github.com/en/github/managing-files-in-a-repository/tracking-changes-in-a-file">git blame</a>
+that allows you to easily see this. Along with git blame, you can very easily see the entire history for any file.</p>
+<h3 id="web-interfaces">Web Interfaces<a class="headerlink" href="#web-interfaces" title="Permalink to this heading">¶</a></h3>
+<p>Wouldn’t it be cool to make websites? Yes! GitHub provides something called <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>
+that will allow you to essentially write <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">markdown files</a> (extension *.md) and have them render into beautiful, webby content. For example, the documentation you are reading right now is totally made up of markdown files and some styling, and you
+can see the entire structure at the repository <a class="reference external" href="https://github.com/rse-ops/knowledge">here</a>.</p>
+<h2 id="can-i-use-github-if-i-m-not-a-programmer">Can I use GitHub if I’m not a programmer?<a class="headerlink" href="#can-i-use-github-if-i-m-not-a-programmer" title="Permalink to this heading">¶</a></h2>
+<p>Absolutely yes! So much of software projects extend beyond just code. A healthy project has documentation, diagrams,
+tutorials, and other image or text content. If you learn the basics of git and using GitHub, you can contribute
+to open source communities eve if you aren’t a programmer.</p>
+<h2 id="what-mindset-should-i-have-when-contributing">What mindset should I have when contributing?<a class="headerlink" href="#what-mindset-should-i-have-when-contributing" title="Permalink to this heading">¶</a></h2>
+<p>Learning new things is challenging, and working with people is also challenging, especially in text-only communication, and living
+through a global pandemic. It’s important to realize that if using GitHub and git is entirely new to you, it’s okay that things will at first be hard.
+You’ll typically start out and not entirely be sure about what the commands you are copy pasting are doing.
+If this sounds like your experience, please remember the following!</p>
+<h3 id="inexperienced-incapable">Inexperienced != Incapable<a class="headerlink" href="#inexperienced-incapable" title="Permalink to this heading">¶</a></h3>
+<p>Every current user of GitHub, or any technology for that matter, was new at  some point. Think of someone that you consider proficient or expert, and
+realize that they at some point were in the same shoes as you. The fact that you are new to a technology says nothing about what you
+are capable of, of your innate abilities. It only says that you are new and learning, and will get better with practice.</p>
+<h3 id="it-s-okay-to-ask-for-help">It’s okay to ask for help<a class="headerlink" href="#it-s-okay-to-ask-for-help" title="Permalink to this heading">¶</a></h3>
+<p>What does it mean to ask for help? You might have questions, feedback, or a general comment, or just want to talk to someone. Asking for help can be daunting, but you shouldn’t be afraid to do so. For every one person that is ornery and doesn’t want to help, there are easily 10 that do want to help and support you. Depending on the opensource community you want to engage with or your institution, there are usually Slack or other communication channels you can join. And hey, if you feel like you are on your own, <a class="reference external" href="https://github.com/rse-ops/knowledge/issues">open an issue</a> to chat with us!</p>
+<h3 id="i-will-improve">I will improve<a class="headerlink" href="#i-will-improve" title="Permalink to this heading">¶</a></h3>
+<p>As long as you don’t give up and keep trying, you will slowly improve. You will only stop improving if you decide to stop, which is something
+that is also an option. There is something to say for knowing when to keep going, and knowing when to quit.
+For programming, or using git or GitHub, it’s good to have a learning mindset. Realize that it’s
+okay to ask for help, and if you keep trying you will grow over time. You also will probably  meet
+interesting people, and have some fun, which is a bonus!</p>
+<h2 id="getting-started-with-github">Getting Started with GitHub<a class="headerlink" href="#getting-started-with-github" title="Permalink to this heading">¶</a></h2>
+<p>Let’s get started with GitHub!</p>
+<h3 id="create-an-account-on-github">1. Create an account on GitHub<a class="headerlink" href="#create-an-account-on-github" title="Permalink to this heading">¶</a></h3>
+<p>If you haven’t yet, you get to <a class="reference external" href="https://github.com/">create an account</a>
+to choose a username and provide your email. When you think about it, GitHub is just another super
+geeky social network where you’ll make a lot of new friends, and connect
+with friends that you already might have on their GitHub accounts.
+Once you have an account, don’t forget to upload a profile picture and add
+any other metadata of interest under <a class="reference external" href="https://github.com/settings/profile">settings</a>.
+If you want to have some fun and make a “README” for your profile, you can <a class="reference external" href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">do that too</a>.</p>
+<h3 id="install-git">2. Install git<a class="headerlink" href="#install-git" title="Permalink to this heading">¶</a></h3>
+<p>GitHub is really powered with <a class="reference external" href="https://git-scm.com/">git</a>.
+You’ll first want to <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install git</a>
+At this point, you have two options. Since the RSE-ops community is heavily HPC based and we like automation, we are going to encourage
+you to get started using the command line, which we will cover in this tutorial. If the command line isn’t your thing, then you should
+<a class="reference external" href="https://help.github.com/en/desktop/getting-started-with-github-desktop">check out GitHub desktop</a>.</p>
+<h3 id="fork-the-repository">3. Fork the Repository<a class="headerlink" href="#fork-the-repository" title="Permalink to this heading">¶</a></h3>
+<p>Okay, now we’re going to talk about silverware. Actually, we’re going to talk about
+forking a repository. Remember that a repository is like a set of files on GitHub’s server.
+For example, the repository content you are reading now is hosted at <a class="reference external" href="https://github.com/rse-ops/knowledge">github.com/rse-ops/knowledge</a>
+and you can run git commands to interact with it. In our case,
+we are going to “fork” it, which means navigating to that page, and clicking
+“Fork” in the upper right, and then selecting your GitHub account. GitHub will then
+jump you over to your newly forked repository, congratulations - you just
+created your first repository!</p>
+<h3 id="clone-your-fork">4. Clone your Fork<a class="headerlink" href="#clone-your-fork" title="Permalink to this heading">¶</a></h3>
+<p>Now you want to work on files. This is a pretty extensive knowledge base, so for your first contribution
+you can choose any page in <code class="docutils literal notranslate"><span class="pre">_docs</span></code> and make an edit. But how do we do this? GitHub does offer a way to edit files
+in the interface if you navigate to the file and click “edit,” but we want to walk you though how to do this on the command line,
+where you’ll have a lot more power. Let’s first talk about the idea of “cloning.” It’s
+called cloning because you are doing exactly that - there is a repository in
+the cloud (on GitHub servers) somewhere that you want to dump (or rather, pull)
+onto your local machine. This will be your first command with git ever run!</p>
+<p>First cd to some location where you want to put your GitHub projects. Maybe you
+would want to organize by language, or GitHUb organization? For example, I have this
+path on my Desktop:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/Desktop/Code
+</code></pre></div>
+</div>
+<p>Once we are happily sitting where we want to create a new folder, we can
+issue the GitHub command to clone. Given that our username is <code class="docutils literal notranslate"><span class="pre">[username]</span></code>
+that would look like either of these:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:<span class="o">[</span>username<span class="o">]</span>/knowledge.git
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/<span class="o">[</span>username<span class="o">]</span>/knowledge.git
+</code></pre></div>
+</div>
+<p>What’s going on here? In the first command, we’ve set up <a class="reference external" href="https://help.github.com/en/enterprise/2.18/user/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">an ssh key</a> and are cloning using it. For the second we
+haven’t. You are totally fine to do the second, although when you have a few minutes,
+the first is the more secure and better option. You should probably do that now, if you haven’t already.
+Also note that when you clone, you can name the repository something else:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:<span class="o">[</span>username<span class="o">]</span>/knowledge.git<span class="w"> </span>docs/
+</code></pre></div>
+</div>
+<p>The above clones the knowledge repository and names the directory “docs.”</p>
+<h3 id="make-a-change">5. Make a Change<a class="headerlink" href="#make-a-change" title="Permalink to this heading">¶</a></h3>
+<p>Okay, let’s cd into the knowledge base and then make a change!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>knowledge
+</code></pre></div>
+</div>
+<p>Before we edit any files, you can do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> to see the branch you are actively
+working on. The default is usually called “main,” and old repositories will use “master.”
+It doesn’t have special meaning (although it can be changed) but is really just a convention.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>branch
+*main
+</code></pre></div>
+</div>
+<p>If you had other branches they would show up too, but without the star. The little
+star indicates “this is the branch that we are sitting on.”</p>
+<blockquote>
+<div><p>What is a branch?</p>
+</div></blockquote>
+<p>A branch corresponds to a particular set of changes you are working on, perhaps
+related to a specific feature. Branches make it possible to work on multiple
+different changes at once, or in parallel. If you take a look in your current folder, there is a little hidden folder called .git.
+We aren’t going to discuss the contents in detail, but this is where every single
+change and record is kept. The branches that you create are kept here, and we can
+do an action of “checking out” any particular branch when we want to work on it.
+If you are super curious you can look at <code class="docutils literal notranslate"><span class="pre">.git/config</span></code> to see how your git repository is configured.</p>
+<p>Let’s do that now - we will create a new branch to make some change to a file in <code class="docutils literal notranslate"><span class="pre">_docs</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>add/some-meaningful-name
+</code></pre></div>
+</div>
+<p>The little <code class="docutils literal notranslate"><span class="pre">-b</span></code> in the command above indicates to create a new branch.
+You should generally choose a branch name that describes your contribution. The first
+part “add” is an action, and you could imagine this also being “update” or “fix” or similar.
+The second part is the specific thing - perhaps you want to “clarify-singularity-binds” or something
+similar. Personally speaking, I like to have longer branch names that clearly identify what the branch
+is aiming to do, because otherwise I’ll forget. If you are responding to a particular issue on GitHub,
+you can also choose to name the branch based on that, e.g., <code class="docutils literal notranslate"><span class="pre">fix/issue-111</span></code>.</p>
+<p>And that’s it - you are now sitting on a new branch and you can make changes.
+So do it! Choose a markdown file in <code class="docutils literal notranslate"><span class="pre">_docs</span></code> and make some changes. It should be organized fairly logically,
+and if you want to add a new document but aren’t sure where to do it, please <a class="reference external" href="https://github.com/rse-ops/knowledge/issues">open an issue</a>!</p>
+<h3 id="commit-the-change">6. Commit the Change<a class="headerlink" href="#commit-the-change" title="Permalink to this heading">¶</a></h3>
+<p>The action of “committing” means that you are happy with a current state,
+and want to write the change officially to your .git directory.
+To give meaning to future humans, you’ll also write a message that describes it.
+This is when we will run the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Adding my contribution (be specific!) to the article on &lt;topic&gt;&quot;</span>
+</code></pre></div>
+</div>
+<p>Reading the above, it says to “commit ALL changes with the message X.” If you have configured
+a gpg key, you can also <a class="reference external" href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits">sign commits</a>
+with <code class="docutils literal notranslate"><span class="pre">-s</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span>-s<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Adding my contribution (be specific!) to the article on &lt;topic&gt;&quot;</span>
+</code></pre></div>
+</div>
+<p>The above also says “commit ALL changes with the message X, and sign the commit to verify it’s me.”</p>
+<h3 id="push-to-your-fork-branch">7. Push to your fork branch<a class="headerlink" href="#push-to-your-fork-branch" title="Permalink to this heading">¶</a></h3>
+<p>Remember that this is all sitting on your local machine. You next need
+to push this up to your remote (on GitHub servers). You can do that as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>add/some-meaningful-name
+</code></pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">add/some-meaningful-name</span></code> is the branch that we are using, and “origin” is another
+weird GitHub convention that refers to the default remote name.
+Actually, if you look at the .git/config file you can see how this is named.
+Here is what mine looks like.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">core</span><span class="p">]</span>
+	<span class="n">repositoryformatversion</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="n">filemode</span> <span class="o">=</span> <span class="n">true</span>
+	<span class="n">bare</span> <span class="o">=</span> <span class="n">false</span>
+	<span class="n">logallrefupdates</span> <span class="o">=</span> <span class="n">true</span>
+<span class="p">[</span><span class="n">remote</span> <span class="s2">&quot;origin&quot;</span><span class="p">]</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">rse</span><span class="o">-</span><span class="n">ops</span><span class="o">/</span><span class="n">knowledge</span>
+        <span class="n">fetch</span> <span class="o">=</span> <span class="o">+</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/*</span><span class="p">:</span><span class="n">refs</span><span class="o">/</span><span class="n">remotes</span><span class="o">/</span><span class="n">origin</span><span class="o">/*</span>
+<span class="p">[</span><span class="n">branch</span> <span class="s2">&quot;main&quot;</span><span class="p">]</span>
+	<span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
+</code></pre></div>
+</div>
+<p>See where it says “origin”? I could change that to “pancakes” and then do:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>pancakes<span class="w"> </span>add/some-meaningful-name
+</code></pre></div>
+</div>
+<h3 id="open-pull-request">8. Open Pull Request<a class="headerlink" href="#open-pull-request" title="Permalink to this heading">¶</a></h3>
+<p>Now your branch is on GitHub! Let’s do the final step, opening the pull request.
+You can navigate to your repository page, click on Pull Requests, and open the pull request! You want it to be your branch (of your fork) against the main branch here.</p>
+<ol class="arabic simple">
+<li><p>Click the button to open the pull request, selecting the correct branch</p></li>
+<li><p>Write a description in the box for what you are changing, and what issues (this one!) you are addressing. Note that if you say anything along the lines of “fixes #1111111” or “closes #111111111” it will automatically close the issues when you merge (neat!)</p></li>
+<li><p>If it’s a draft you can mark as a draft, and put remaining questions or points of discussion in the description.</p></li>
+<li><p>Ping others that might want to review or contribute to the discussion</p></li>
+</ol>
+<p>And that should be it! Working on GitHub is usually pretty fun, and a good learning experience for forking, cloning, changing, committing, and opening a pull request. And guess what, there are definitely more advanced stuffs you can do with git, but that’s largely the basics that will empower you to contribute to most projects! That said, if you want us to add any additional examples here, please <a class="reference external" href="https://github.com/rse-ops/knowledge/issues">let us know</a>.</p>
+
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      Feb 02, 2023
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Version Control" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Version Control
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../about/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: About RSE-OPS" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              About RSE-OPS
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2023, RADIUSS Developers.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    5.3.0.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/flux-framework/flux-operator" target="_blank" rel="noopener" title="Flux Operator on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://flux-framework.org/" target="_blank" rel="noopener" title="Flux Framework" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2.05c5.05.5 9 4.77 9 9.95 0 1.45-.32 2.83-.88 4.07l-2.62-1.53c.32-.79.5-1.64.5-2.54 0-3.53-2.61-6.43-6-6.92V2.05M12 19c2.21 0 4.17-1 5.45-2.62l2.6 1.53A9.97 9.97 0 0 1 12 22C6.47 22 2 17.5 2 12a9.99 9.99 0 0 1 9-9.95v3.03C7.61 5.57 5 8.47 5 12a7 7 0 0 0 7 7m0-13a6 6 0 0 1 6 6c0 2.97-2.16 5.44-5 5.92v-3.09c1.17-.41 2-1.52 2-2.83a3 3 0 0 0-3-3l-.55.05-1.54-2.67C10.56 6.13 11.26 6 12 6m-6 6c0-1.86.85-3.5 2.18-4.62l1.54 2.67C9.27 10.57 9 11.26 9 12c0 1.31.83 2.42 2 2.83v3.09c-2.84-.48-5-2.95-5-5.92Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "toc.integrate", "navigation.sections", "navigation.instant", "header.autohide", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.cea6a0c1d5b0618cf.min.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/rtd_sphinx_search.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+  </body>
+</html>
