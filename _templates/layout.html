@@ -1,0 +1,52 @@
+{# Import the theme's layout. #}
+{% extends '!layout.html' %}
+
+{%- block extrahead %}
+{# Extra custom things to the head HTML tag #}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- Social: Facebook / Open Graph -->
+<title>RSE-OPS Knowledge </title>
+<link rel="canonical" href="https://rse-ops.github.io/knowledge/"/>
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://rse-ops.github.io/knowledge/">
+<meta property="og:title" content="RSE-OPS Knowledge">
+<meta property="og:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<meta property="og:description" content="RSE-OPS Knowledge ">
+<meta property="og:site_name" content="RSE-OPS Knowledge">
+<meta property="og:locale" content="en_US">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@vsoch">
+<meta name="twitter:title" content="vanessasaurus on Twitter">
+<meta name="twitter:description" content="Ping our developers on Twitter">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="RSE-OPS Knowledge">
+<meta itemprop="description" content="RSE-OPS Knowledge">
+<meta itemprop="image" content="https://raw.githubusercontent.com/rse-ops/knowledge/main/assets/img/rse-ops-roadmap.png">
+<script type="application/ld+json">
+  {"@type":"WebSite","headline":"RSE-OPS Knowledge","url":"https://rse-ops.github.io/knowledge","description":"The RSE-OPS Knowledge base ","name":"RSE-OPS Knowledge","@context":"https://schema.org"}
+</script>
+
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.sphx-glr-script-out .highlight pre {
+  background-color: #def0ff !important;
+}
+  </style>
+
+
+{# Call the parent block #}
+{{ super() }}
+{%- endblock %}

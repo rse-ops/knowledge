@@ -1,7 +1,5 @@
 # Knowledge Base
 
-[![CircleCI](https://circleci.com/gh/rse-ops/knowledge/tree/main.svg?style=svg)](https://circleci.com/gh/rse-ops/knwoledge/tree/main)
-
 Welcome to the RSE-ops Knowledge base! Here you can find guides and resources for the [RSE-ops landscape](https://rse-ops.github.io/landscape/).
 
 ![assets/img/rse-ops-roadmap.png](assets/img/rse-ops-roadmap.png)
@@ -17,48 +15,30 @@ git clone https://github.com/rse-ops/knowledge.git
 cd knowledge
 ```
 
-### 2. Customize
+### 2. Add Documentation or Pages
 
-#### Documentation or Pages
+You can add documentation as markdown files under [docs](docs) and make sure they are
+generally linked from an index.md somewhere!
 
-You will most likely want to add docs or knowledge articles, in which case you can write them to [_docs](https://github.com/rse-ops/knowledge/blob/main/_docs) under the appropriate category of organization and they will show up.
 
-To add top level pages (e.g. "About") write them into the [pages](https://github.com/rse-ops/knowledge/blob/main/pages) folder. 
-For pages you must define urls based on the `permalink` attribute at the top of the markdown.
+### 3. Build
 
-To edit the main navigation on the left, update [_data/toc.myl](https://github.com/rse-ops/knowledge/blob/main/_data/toc.yml).
-The top navigation is controlled by [_data/navigation.yml](https://github.com/rse-ops/knowledge/blob/main/_data/navigation.yml)
-
-#### Terms
-
-To add a new term to the terms pages, add it to the [_data/terms.yaml](_data/terms.yaml)
-file. It should be self explanatory - whether you have a term or acronym, it will have a name
-and definition. If you are working on a specific documentation page under `_docs`, you can also add
-a list of terms there, as follows:
-
-```yaml
-terms:
- - name: Avocado
-   definition: The most delicious of things.
-```
-
-#### Options
-
-Most of the configuration values in the [_config.yml](https://github.com/rse-ops/knowledge/blob/main/_config.yml) are self explanatory,
-and for more details, see the [Developer getting started](https://rse-ops.github.io/knowledge/docs/developer)
-rendered on the site.
-
-### 4. Serve
-
-Depending on how you installed jekyll:
+You likely want to set up a python environment to install dependencies to:
 
 ```bash
-jekyll serve
-# or
-bundle exec jekyll serve
+python -m venv env 
+source env/bin/activate
+pip install -r requirements.txt
 ```
 
-**NOTE:** If the above serve command throws an error saying `require': cannot load such file -- webrick (LoadError)` try to run `bundle add webrick` to automatically add the webrick gem to your Gemfile, or manually add `gem "webrick"` line to the Gemfile and then run the serve command again.
+And then build docs:
+
+```bash
+cd _build/html/
+python -m http.server 9999
+```
+
+And open your browser to [http://127.0.0.1](http://127.0.0.1).
 
 ### 5. Pull Request
 
