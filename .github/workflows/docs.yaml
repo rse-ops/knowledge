@@ -1,4 +1,4 @@
-name: docs flux-operator
+name: docs knowledge
 on:
   push:
     branches: [main]

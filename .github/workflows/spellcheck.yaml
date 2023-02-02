@@ -1,4 +1,4 @@
-name: check-spelling
+name: check-spelling knowledge
 
 on:
   push:
